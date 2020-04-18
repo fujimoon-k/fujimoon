@@ -1,0 +1,83 @@
+body {
+  background-color: #222;
+  margin: 0;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  margin: 0 5%;
+}
+
+header a {
+  display: inline-block;
+  margin-right: auto;
+}
+
+header #top-logo {
+  width: 100%;
+  margin: 20px 10%;
+  z-index: 0;
+}
+
+header #top-logo path {
+  fill: none;
+  animation: fadeIn 0.2s ease-in forwards;
+  -webkit-animation: fadeIn 0.2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: #ddd;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header ul {
+    display: none;
+  }
+}
+
+header li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 10px 10px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: green;
+}
+
+header .menu-icon {
+  display: none;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  header .menu-icon {
+    display: block;
+    width: 50px;
+    margin: 20px 0 0 0;
+    font-size: 40px;
+    color: #bbb;
+  }
+}

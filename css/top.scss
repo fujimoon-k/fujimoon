@@ -1,0 +1,53 @@
+
+
+
+  .top-image {
+    background-image: url("../img/top-background.jpg");
+    background-color:rgba(0,0,0,0.9);
+    background-blend-mode:darken;
+
+    background-size: cover;
+    background-attachment: fixed;
+
+    #top-banner {
+      width: 80%;
+      margin: 0 10%;
+      padding: 0;
+      z-index: 0;
+    }
+    path {
+        fill: none;
+        stroke: #fff; /*線の色を指定する*/
+        stroke-dasharray: 2000;/*線の間隔を指定する*/
+        stroke-dashoffset: 0;/*線の位置を指定する(IEは効かない属性)*/
+        stroke-width: 1;/*線の太さを指定する*/
+        -webkit-animation: hello 3s ease-in forwards;
+        animation: hello 3s ease-in forwards;
+    }
+    @-webkit-keyframes hello {
+       0% {
+       stroke-dashoffset: 2000;
+       fill:transparent; /*透過*/
+      }
+       50% {
+       fill:transparent; /*透過*/
+      }
+       100% {
+       stroke-dashoffset: 0;
+       fill:#333;
+      }
+    }
+    @keyframes hello {
+       0% {
+       stroke-dashoffset: 2000;
+       fill:transparent; /*透過*/
+      }
+       50% {
+       fill:transparent; /*透過*/
+      }
+       100% {
+       stroke-dashoffset: 0;
+       fill:#999;
+      }
+    }
+  }

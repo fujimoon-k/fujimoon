@@ -1,0 +1,92 @@
+$breakpoints: (
+  'sm': 'screen and (min-width: 400px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (min-width: 1000px)',
+  'xl': 'screen and (min-width: 1200px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+body {
+  background-color: #222;
+  margin: 0;
+}
+
+h2{
+  color: white;
+}
+
+p {
+  color: white;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  margin: 0 5%;
+  a {
+    display: inline-block;
+    margin-right: auto;
+  }
+  #top-logo {
+    width: 100%;
+    margin: 20px 10%;
+    z-index: 0;
+
+    path {
+      fill: none;
+      animation: fadeIn 0.2s ease-in forwards;
+      -webkit-animation: fadeIn 0.2s ease-in forwards;
+      @keyframes fadeIn {
+          0% {fill:transparent}
+          100% {fill: #ddd}
+      }
+
+
+    }
+  }
+
+
+  ul {
+    @include mq() {
+      display: none;
+    }
+  }
+
+  li {
+    display: inline-block;
+    list-style-type: none;
+
+    margin: 10px 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: green;
+
+  }
+
+  .menu-icon {
+    display: none;
+    text-align: right;
+    @include mq(){
+      display: block;
+      width: 50px;
+      margin: 20px 0 0 0;
+      font-size: 40px;
+      color: #bbb;
+    }
+  }
+
+}
