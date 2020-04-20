@@ -1,24 +1,29 @@
-$breakpoints: (
-  'sm': 'screen and (min-width: 400px)',
-  'md': 'screen and (max-width: 768px)',
-  'lg': 'screen and (min-width: 1000px)',
-  'xl': 'screen and (min-width: 1200px)',
-) !default;
+@import "./profile.scss";
+@import "./reset.scss";
+@import "./top.scss";
+@import "./variables.scss";
+@import "./work.scss";
 
-@mixin mq($breakpoint: md) {
-  @media #{map-get($breakpoints, $breakpoint)} {
-    @content;
-  }
-}
 
 body {
   background-color: #222;
   margin: 0;
 }
 
-h2{
+h1 {
+  color: white;
+  text-align: center;
+  margin: 50px auto;
+  @include mq() {
+    margin: 10px auto;
+  }
+}
+
+h2, h3{
   color: white;
 }
+
+
 
 p {
   color: white;
@@ -73,7 +78,7 @@ header {
     margin: 10px 10px;
     padding: 10px 20px;
     border-radius: 30px;
-    background-color: green;
+    background-color: #999;
 
   }
 
