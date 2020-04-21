@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=360px ,initial-scale=1">
+  <meta name="viewport" content="width=device-width ,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>fujimoon's room</title>
 </head>
@@ -116,9 +116,9 @@
         </svg>
       </a>
       <ul>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="profile.html"><span class="profile">Profile</span></a></li>
+        <li><a href="work.html"><span class="work">Work</span></a></li>
+        <li><a href="contact.html"><span class="contact">Contact</span></a></li>
       </ul>
     </header>
     <main>
@@ -129,21 +129,21 @@
           <div class="work-content">
             <img src="img/work_test.jpeg" alt="work image">
             <div class="work-description">
+              <div class="work-about work-detail">
+                <h3>このプロダクトについて</h3>
+                <p>業務改善のために作成したアプリのサンプルです。バーコードで読み取るチケットを
+                  組織別に発行し、利用者はスマホでチケットをバーコードリーダーにかざします。</p>
+              </div>
               <div class="work-lang work-detail">
                 <h3>使用技術</h3>
                 <p><span>Ruby on Rails</span><span>jQuery</span><span>Heroku</span></p>
-              </div>
-              <div class="work-about work-detail">
-                <h3>このプロダクトについて</h3>
-                <p>業務で使用しているアプリのサンプルです。バーコードで読み取るチケットを
-                  組織別に発行し、利用者はスマホでチケットをバーコードリーダーにかざします。</p>
               </div>
               <div class="work-func work-detail">
                 <h3>機能詳細</h3>
                 <p>
                   <span>ログイン機能</span>
                   <span>チケット検索</span>
-                  <span>csvファイルのimport, export</span>
+                  <span>csvファイルの入出力</span>
                   <span>文字列のバーコード変換(svg形式)</span>
                 </p>
               </div>
@@ -155,14 +155,14 @@
           <div class="work-content">
             <img src="img/work_test.jpeg" alt="work image">
             <div class="work-description">
-              <div class="work-lang work-detail">
-                <h3>使用技術</h3>
-                <p><span>HTML/CSS</span><span>sass</span><span>Vue.js</span></p>
-              </div>
               <div class="work-about work-detail">
                 <h3>このプロダクトについて</h3>
                 <p>本ページです。ゼロからレイアウト組んだ経験がほとんどないのでかなり苦戦して作成しました。
                   本ポートフォリオ作成を通じてsassの偉大さを学べました。</p>
+              </div>
+              <div class="work-lang work-detail">
+                <h3>使用技術</h3>
+                <p><span>HTML/CSS</span><span>sass</span><span>Vue.js</span></p>
               </div>
               <div class="work-func work-detail">
                 <h3>機能詳細</h3>

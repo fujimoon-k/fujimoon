@@ -1,43 +1,51 @@
 @import "./variables.scss";
 
 .content {
-  margin: 0 10%;
+  .profile-header {
+    text-align: center;
 
-  .profile-header{
-    text-align:center;
-    .prof-header-description{
+    .prof-header-description {
       margin: auto;
-      width: 400px;
+      width: 480px;
+      @include mq('md') {
+        font-size: 14px;
+        width: 300px;
+      }
+
       .prof-name {
         padding-bottom: 5px;
         font-size: 24px;
-
-
       }
+
       .prof-description {
         padding-top: 10px;
         border-top: solid 1px #ddd;
       }
     }
+
     p {
       margin: 0 10%;
       text-align: left;
     }
+
     img {
-      width: 300px;
+      width: 240px;
       border-radius: 80px;
-
     }
-
   }
-  .profile-detail{
 
+  .prof-rows {
+    margin: 50px;
+    @include mq('lg') {
+      margin: 50px 20px;
+    }
     .prof-row {
-      h2 {
+
+      .prof-title {
         border-bottom: solid 1px #ddd;
       }
 
-      .prof-content {
+      .prof-contents {
         display: flex;
         margin: 20px;
         @include mq('lg') {
@@ -45,45 +53,97 @@
           text-align: center;
         }
 
-
         img {
           width: 400px;
+          height: 400px;
           border-radius: 40px;
           opacity: 0.7;
+          @include mq('md') {
+            width: 240px;
+            height: 240px;
+          }
         }
-        .prof-description{
-          margin: 20px 0;
+        // Work
+        .prof-content {
           text-align: center;
+
           p {
-            margin: 80px;
-            padding: 15px;
+            margin: 0 20px;
             text-align: left;
-            @include mq('lg') {
-              margin: 20px;
+            @include mq('md') {
+              margin: 0;
+            }
+
+          }
+
+          span {
+            display: inline-block;
+            color: white;
+            margin: 5px;
+            padding: 10px;
+            background-color: #123456;
+            border-radius: 5px;
+            font-size: 12px;
+          }
+          .prof-skillset {
+            margin: 0px 30px;
+            @include mq('md') {
+              margin: 0;
+            }
+            h3 {
+              display: inline-block;
+              margin: 10px 0;
+              padding: 5px;
+              border-bottom: solid 1px #ddd;
+            }
+            h4 {
+              padding: 0 15px;
+              text-align: left;
+            }
+            display: inline-block;
+            text-align: left;
+
+            .prof-skillset-box {
+              padding: 0 15px;
             }
           }
-          a {
-            display: inline-block;
-            width: 30%;
+          .prof-about-description{
+            margin: 20px 30px;
+            @include mq('md') {
+              margin: 20px 0;
+            }
+            .work_button {
+             display: inline-block;
+             margin: 10px;
+             padding: 10px 20px;
+             border-radius: 30px;
+             background-color: green;
+            }
+            .cooking_button{
+              display: inline-block;
+              margin: 10px;
+              padding: 10px 20px;
+              border-radius: 30px;
+              background-color: green;
+            }
+            .cook-description{
+              margin: 80px;
+              @include mq('md') {
+                margin: 20px;
+              }
+            }
+            .fa-instagram{
+              margin-right: 5px;
+            }
+            .opera-description{
+              margin: 80px;
+              @include mq('md') {
+                margin: 20px;
+              }
+            }
           }
-
-
-        }
-      }
-
-      .profile_button  {
-        display: inline-block;
-        margin: 10px 10px;
-        padding: 10px 20px;
-        border-radius: 30px;
-        background-color: green;
-
-        .disabled {
-           pointer-events: none;
-           background-color: rgba(0,0,0,0.5);
         }
       }
     }
   }
-
 }
