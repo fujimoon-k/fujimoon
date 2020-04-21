@@ -116,10 +116,22 @@
           </g>
         </svg>
       </a>
-
-      <a href="#" class="menu-icon">
-        <span class="fa fa-bars"></span>
-      </a>
+      <div class="humburger-menu">
+        <div id="app">
+          <slide width="200" right/>
+            <a href="profile.html">
+              <span>Profile</span>
+            </a>
+            <a href="work.html">
+              <span>Works</span>
+            </a>
+            <a href="contact.html">
+              <span>Contact</span>
+            </a>
+          </slide>
+          <div id="page-wrap"></div>
+        </div>
+      </div>
       <ul>
         <li class="profile"><a href="profile.html">Profile</a></li>
         <li class="work"><a href="work.html">Work</a></li>
@@ -215,6 +227,9 @@
     </main>
     <footer>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-burger-menu@2.0.3/dist/vue-burger-menu.umd.js"></script>
+    <script type="text/javascript" src="js/humburger.js"></script>
 </body>
 
 </html>
