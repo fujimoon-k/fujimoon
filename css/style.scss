@@ -12,10 +12,6 @@ body {
 h1 {
   color: white;
   text-align: center;
-  margin: 50px auto;
-  @include mq() {
-    margin: 10px auto;
-  }
 }
 
 h2, h3, h4{
@@ -41,6 +37,14 @@ header {
   margin: 0 5%;
   @include mq() {
     text-align: left;
+  }
+
+  h1{
+    margin: 0;
+    @include mq() {
+      margin: 33px 0;
+      font-size: 24px;
+    }
   }
   a {
     margin-right: auto;
@@ -83,26 +87,52 @@ header {
     margin: 10px 10px;
     padding: 10px 20px;
     border-radius: 30px;
-    background-color: #777222;
-
-
-
-  }
-  li.contact{
-    background-color: #888;
+    background-color: #555;
   }
 
 
-  .menu-icon {
+  .humburger-menu{
     display: none;
-    text-align: right;
-    @include mq(){
+    @include mq() {
       display: block;
-      width: 50px;
-      margin: 20px 0 0 0;
-      font-size: 40px;
-      color: #bbb;
+
+    }
+
+  }
+
+}
+
+footer {
+  background-color: #111;
+  margin: auto;
+  .contact {
+    text-align: center;
+    padding-bottom: 100px;
+
+    h2 {
+      border-bottom: solid 1px #444;
+      margin: auto;
+      padding: 20px 0;
+      width: 400px;
+      @include mq() {
+        width: 200px;
+      }
+    }
+    .contact-sns{
+      margin: 30px;
+      a {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #333;
+        @include mq() {
+          font-size: 10px;
+        }
+      }
+      .fab {
+        margin-right: 5px;
+      }
     }
   }
-
 }

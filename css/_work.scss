@@ -1,5 +1,12 @@
+
+h1 {
+  margin: 50px auto;
+  @include mq() {
+    margin: 10px auto;
+  }
+}
 .work-rows {
-  margin: 0 50px;
+  margin: 50px;
   @include mq('md') {
     margin: 0;
     padding: 0 10px;
@@ -75,6 +82,9 @@
         }
         .work-about {
           margin: 20px 0;
+          a {
+            color: #FFA500;
+          }
 
         }
         .work-func {
