@@ -93,6 +93,11 @@ header {
     padding: 10px 20px;
     border-radius: 30px;
     background-color: #555;
+    transition-duration:0.2s;
+    &:hover{
+      background-color: #3e854b;
+    }
+
   }
 
 
@@ -131,6 +136,10 @@ footer {
         padding: 10px;
         border-radius: 10px;
         background-color: #333;
+        transition-duration:0.2s;
+        &:hover {
+          background-color: #3e854b;
+        }
         @include mq() {
           font-size: 10px;
         }

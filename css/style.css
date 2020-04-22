@@ -144,20 +144,17 @@
   }
 }
 
-.content .prof-rows .prof-row .prof-contents .prof-content .prof-about-description .work_button {
+.content .prof-rows .prof-row .prof-contents .prof-content .prof-about-description .prof_button {
   display: inline-block;
   margin: 10px;
   padding: 10px 20px;
   border-radius: 30px;
-  background-color: green;
+  background-color: #555;
+  transition-duration: 0.2s;
 }
 
-.content .prof-rows .prof-row .prof-contents .prof-content .prof-about-description .cooking_button {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  border-radius: 30px;
-  background-color: green;
+.content .prof-rows .prof-row .prof-contents .prof-content .prof-about-description .prof_button:hover {
+  background-color: #3e854b;
 }
 
 .content .prof-rows .prof-row .prof-contents .prof-content .prof-about-description .cook-description {
@@ -818,6 +815,11 @@ header li {
   padding: 10px 20px;
   border-radius: 30px;
   background-color: #555;
+  transition-duration: 0.2s;
+}
+
+header li:hover {
+  background-color: #3e854b;
 }
 
 header .humburger-menu {
@@ -863,6 +865,11 @@ footer .contact .contact-sns a {
   padding: 10px;
   border-radius: 10px;
   background-color: #333;
+  transition-duration: 0.2s;
+}
+
+footer .contact .contact-sns a:hover {
+  background-color: #3e854b;
 }
 
 @media screen and (max-width: 768px) {
