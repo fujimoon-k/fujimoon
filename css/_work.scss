@@ -1,8 +1,10 @@
 
 h1 {
   margin: 50px auto;
+
   @include mq() {
-    margin: 10px auto;
+    font-size: 28px;
+    margin: 30px auto;
   }
 }
 .work-rows {
@@ -19,8 +21,12 @@ h1 {
     }
     .work-title {
       border-bottom: solid 1px #ddd;
+      border-left: solid 3px #ddd;
+      padding-left: 15px;
+      padding-bottom: 10px;
       @include mq('lg') {
         font-size: 20px;
+        
       }
     }
 
@@ -84,6 +90,13 @@ h1 {
           margin: 20px 0;
           a {
             color: #FFA500;
+          }
+          .work-access{
+            display: inline-block;
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #333;
           }
 
         }

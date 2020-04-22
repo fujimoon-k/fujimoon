@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .content .profile-header {
   text-align: center;
+  margin-top: 30px;
 }
 
 .content .profile-header .prof-header-description {
@@ -46,7 +47,10 @@
 }
 
 .content .prof-rows .prof-row .prof-title {
+  padding-left: 15px;
+  padding-bottom: 10px;
   border-bottom: solid 1px #ddd;
+  border-left: solid 3px #ddd;
 }
 
 .content .prof-rows .prof-row .prof-contents {
@@ -523,7 +527,7 @@ svg:not([fill]) {
 
 @media screen and (max-width: 1200px) {
   .top-image #top-banner {
-    padding: 120px 0;
+    padding: 70px 0;
   }
 }
 
@@ -531,7 +535,7 @@ svg:not([fill]) {
   .top-image #top-banner {
     width: 100%;
     margin: 0;
-    padding: 180px 0;
+    padding: 140px 0;
   }
 }
 
@@ -587,7 +591,8 @@ h1 {
 
 @media screen and (max-width: 768px) {
   h1 {
-    margin: 10px auto;
+    font-size: 28px;
+    margin: 30px auto;
   }
 }
 
@@ -614,6 +619,9 @@ h1 {
 
 .work-rows .work-row .work-title {
   border-bottom: solid 1px #ddd;
+  border-left: solid 3px #ddd;
+  padding-left: 15px;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -695,6 +703,14 @@ h1 {
   color: #FFA500;
 }
 
+.work-rows .work-row .work-content .work-description .work-about .work-access {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #333;
+}
+
 .work-rows .work-row .work-content .work-description .work-func span {
   display: inline-block;
   margin-bottom: 5px;
@@ -728,8 +744,9 @@ a {
 }
 
 header {
+  background-color: #111;
   display: flex;
-  margin: 0 5%;
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -739,12 +756,14 @@ header {
 }
 
 header h1 {
-  margin: 0;
+  margin: 10px 0;
+  padding-left: 30px;
 }
 
 @media screen and (max-width: 768px) {
   header h1 {
     margin: 33px 0;
+    padding-left: 10px;
     font-size: 24px;
   }
 }
@@ -852,6 +871,6 @@ footer .contact .contact-sns a {
   }
 }
 
-footer .contact .contact-sns .fab {
+footer .contact .fab {
   margin-right: 5px;
 }

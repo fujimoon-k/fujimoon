@@ -22,12 +22,12 @@
 
       z-index: 0;
       @include mq('xl') {
-        padding: 120px 0;
+        padding: 70px 0;
       }
       @include mq('md') {
         width: 100%;
         margin: 0;
-        padding: 180px 0;
+        padding: 140px 0;
       }
     }
     path {
