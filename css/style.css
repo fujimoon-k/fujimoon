@@ -163,7 +163,7 @@
 
 @media screen and (max-width: 768px) {
   .content .prof-rows .prof-row .prof-contents .prof-content .prof-about-description .cook-description {
-    margin: 20px;
+    margin: 20px 0px;
   }
 }
 
@@ -177,7 +177,7 @@
 
 @media screen and (max-width: 768px) {
   .content .prof-rows .prof-row .prof-contents .prof-content .prof-about-description .opera-description {
-    margin: 20px;
+    margin: 20px 0px;
   }
 }
 
@@ -722,12 +722,12 @@ body {
 }
 
 h1 {
-  color: white;
+  color: #ddd;
   text-align: center;
 }
 
 h2, h3, h4 {
-  color: white;
+  color: #ddd;
 }
 
 p {

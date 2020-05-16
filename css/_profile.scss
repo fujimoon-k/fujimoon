@@ -144,7 +144,7 @@
             .cook-description{
               margin: 80px;
               @include mq('md') {
-                margin: 20px;
+                margin: 20px 0px;
               }
             }
             .fa-instagram{
@@ -153,7 +153,7 @@
             .opera-description{
               margin: 80px;
               @include mq('md') {
-                margin: 20px;
+                margin: 20px 0px;
               }
             }
           }
